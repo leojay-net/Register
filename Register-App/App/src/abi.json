@@ -1,0 +1,118 @@
+[
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [],
+        "name": "count",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_studentId",
+            "type": "uint256"
+          }
+        ],
+        "name": "getStudentById",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "studentId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "studentName",
+                "type": "string"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRemoved",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Register.Student",
+            "name": "",
+            "type": "tuple"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "name": "getStudentList",
+        "outputs": [
+          {
+            "components": [
+              {
+                "internalType": "uint256",
+                "name": "studentId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "studentName",
+                "type": "string"
+              },
+              {
+                "internalType": "bool",
+                "name": "isRemoved",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct Register.Student[]",
+            "name": "",
+            "type": "tuple[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_studentId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "_studentName",
+            "type": "string"
+          }
+        ],
+        "name": "registerStudent",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_studentId",
+            "type": "uint256"
+          }
+        ],
+        "name": "removeStudent",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+]
+  
